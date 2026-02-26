@@ -1,45 +1,49 @@
-## What you will make
-OR
-## What you will do - change meta if you use this
+## Create a background
 
-A brief description - one or two sentences. 
+This project contains code to draw the sky as a blue rectangle.
 
---- print-only ---
+➡️ Remove the black border from the background.
 
-![ALT TEXT](images/IMAGE.png)
+### Step 1
+The border of a shape is called the **stroke**.
 
---- /print-only ---
+Click the run button, and you should see a blue rectangle with a black border. 
 
---- no-print ---
+### Step 2
+Add `no_stroke()`{:.language-python} to the `setup`{:.language-python} function to turn the stroke off for all shapes. 
 
-[Editor embed](https://editor.raspberrypi.org/en/embed/viewer/project-slug)
+<div class="c-project-code">
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 13
+line_highlights: 16
+---
+def setup():
+# Set up your game here
+    size(400, 400)  # width and height of screen
+    no_stroke()
 
---- /no-print ---
+--- /code ---
 
---- no-print ---
-
-Video embed
-
-<video width="640" height="360" controls>
-<source src="images/videoname.mp4" type="video/mp4">
-</video>
-
-Youtube embed 
-<html>
-<div style="position: relative; overflow: hidden; padding-top: 56.25%;">
-<iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/XXXXXXXXX?rel=0&cc_load_policy=1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-</iframe>
-</div><br>
-</html>
-
-Scratch embed
-<div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/XXXXXXXXX/?autostart=false" frameborder="0"></iframe>
 </div>
 
---- /no-print ---
+### Now run your code
 
-### You will need:
-- a
-- b
-- c
+Did you notice that the border (stroke) has now disappeared?
+
+![image of a blue rectangle](images/sky.png)
+
+
+<div class="c-project-output">
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/editor-turtle-snowflakes-complete" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
+</div>
+
+
+> ### Tip
+> 
+> Coordinates start from (x=0, y=0) in the top left-hand corner. This might be different to other coordinate systems you have used.
+>
+>If you see an alert "Execution interrupted" when you click stop on your program, don't be concerned. This just means the normal flow of the program was stopped.
+{: .c-project-callout .c-project-callout--tip}
